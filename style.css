@@ -10,7 +10,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.nav-title{
+.section-title{
     color: var(--Dark-01, #131313);
     text-align: center;
     font-size: 45px;
@@ -41,10 +41,82 @@ header{
     color: var(--Dark-01, #131313);
     font-size: 64px;
 }
-.banner-description{
+.gray{
     color: var(--Dark-03, #727272);
     font-size: 16px;
 }
+.banner img{
+    width: 100%;
+    margin-top: 30px;
+}
 .btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #fff;
+    padding: 20px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.container{
+    display: flex;
+    align-items: center;
+}
+.container-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.gray{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.Quick{
+    color: var(--Dark-03, #727272);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.of-our{
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.text-features{
+    color: #FF900E;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav, .container{
+        flex-direction: column;
+    }
+    .container-img{
+        grid-template-columns: 1fr;
+    }
+    .gray{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav, .container{
+        flex-direction: column;
+    }
 }
